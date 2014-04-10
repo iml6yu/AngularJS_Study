@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style: none;
+  overflow: hidden;
+}
+
+.point-red-xl {
+  border-radius: 100%;
+  background: #f00;
+  border: solid .1px #ff0;
+  box-shadow: 0 0 4px;
+  -webkit-box-shadow: 0 0 4px #ff0;
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  width: 8px;  
+  z-index: 9;
+}
+
+.line-h {
+  background: #aaa;
+  width: auto;
+  height: 4px;
+  opacity: .8;
+  border-radius: 2px;
+}
+
+.line-v {
+  background: #aaa;
+  width: 4px;
+  height: 100%;
+  opacity: .8;
+  border-radius: 2px;
+}
+
+.minmap {
+  float: left;
+  height: 100px;
+  width: 98%;
+  border: solid 1px #f00;
+}
+
+.bigmap {
+  height: 400px;
+  width: 98%;
+  border: solid 1px #ff0;
+}
+
+.minmap span + div {
+  width: 300px;
+}
+
+.bigmap span + div + div {
+  margin-left: 200px;
+  width: 800px;
+  height: 10px;
+}
+
+.line {
+  position: relative;
+  top: 3px;
+}
+
+.point {
+  position: relative;
+  top: -10px;
+}
+
+.point-second {
+  left: 100px;
+}
+
+
+.point-third {
+  left: 300px;
+}
+
+.nav-year {
+  color: #666;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.nav-year:hover {
+  background: #ddd;
+}
+
+.pin {
+  background: #aaa;
+  border-radius: 50%;
+  height: 6px;
+  width: 4px;
+  margin: 0 auto;
+}
+
+.pop-info {
+  background: #fff;
+  border: solid 1px #00f;
+  display: none;
+  height: 80px;
+  width: 120px;
+  position: absolute;
+  overflow: hidden;
+  color: #00f;
+  font-size: .8em;
+  float: left;
+  text-align: center;
+  z-index: 10;
+}
+
+#discribe {
+  text-align: left;
+  text-indent: 2em;
+  word-wrap: break-word;
+}
+
+.detial {
+  height: 200px;
+  width: 800px;
+  margin-left: 200px;
+}
