@@ -7,6 +7,7 @@ if(typeof timeLine === 'undefined') {
 timeLine.controller('getData',['$scope','$http',function($scope,$http) {
   $http.get('json.txt').success(function(data) {
     $scope.dataInfo = data;
+    $scope.timeLineWidth = data.length * 80;
   });
 }]).controller('getTemplate',['$scope','$http',function($scope,$http) {
   $scope.minTimeLineTemplate = function() {
@@ -51,7 +52,7 @@ timeLine.directive('mintimelinenav',['$document','$window',function($document,$w
               + '<div class="pin"></div>'
               + '</li>'
               + '</ol>'
-              + '<div class="line-h line" style="width:' + 220 +'px">' + console.info(datas) + '</div>'
+              + '<div class="line-h line" style="width: {{timeLineWidth}}px"></div>'
               + '</div>'
   };
 }]);
