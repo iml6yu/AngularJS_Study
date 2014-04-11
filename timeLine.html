@@ -12,17 +12,7 @@
   <body ng-app="timeLine">
     <div class="minmap">
       <span>This is a min timeline.</span>
-      <div ng-controller="getData">     
-        <ol>
-          <li class="nav-year" ng-repeat="data in dataInfo">
-            <div pop>{{data.year}}</div>
-            <div class="pin"></div>
-          </li>
-        </ol>
-        <div class="line-h line">
-        <!--   {{dataInfo|json}}   -->        
-        </div>   
-      </div>
+      <mintimelinenav></mintimelinenav>
     </div>
     <div class="bigmap">
       <span>This is a timeline.</span>
@@ -44,8 +34,6 @@
       <h2></h2>
       <hr>
       <p id="discribe"></p>
-    </div>
-    <div style="background:#ddd; width:500px; height:400px;" min-time-line-nav>
     </div>
   </body>
 </html>
